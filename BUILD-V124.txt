@@ -1,0 +1,3 @@
+Fir Law Group v124
+Exact mobile fix for Rick W Adams / Fir Solutions profile.
+Photo and bio stack vertically on screens 900px and below.

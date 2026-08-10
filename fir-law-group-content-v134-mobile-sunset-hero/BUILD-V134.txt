@@ -1,0 +1,3 @@
+Fir Law Group v134
+Mobile-only sunset hero with crisp live HTML text and readability gradient.
+Desktop hero and all remaining site content are unchanged from approved v133.

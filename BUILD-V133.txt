@@ -1,0 +1,3 @@
+Fir Law Group v133
+Mobile-only refinement: compact logo-and-hamburger header and a taller, centered hero crop.
+Built from approved v132 ZIP.
