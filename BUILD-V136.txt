@@ -1,0 +1,3 @@
+Fir Law Group v136
+Desktop-only header simplified to match the approved Fir Forensics structure.
+Mobile header, sunset hero, profile sizing, page content, and footer remain unchanged from approved v135.
