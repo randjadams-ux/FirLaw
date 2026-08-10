@@ -1,0 +1,3 @@
+Fir Law Group v135
+Mobile-only precedence fixes: sunset hero reliably replaces the legacy hero, and Rick's photo matches Joshua Cook's mobile width.
+Desktop and all other content remain unchanged from approved v134.
