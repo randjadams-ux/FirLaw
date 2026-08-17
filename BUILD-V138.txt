@@ -1,0 +1,7 @@
+Fir Law Group content build v138
+
+Changes from approved v137:
+- Desktop hero wording is live HTML text for sharp rendering at every screen size.
+- Desktop hero artwork replaced with a cleaner, more natural text-free landscape.
+- Mobile hero and all other site content, layout, navigation, and footer remain unchanged.
+
