@@ -1,0 +1,5 @@
+Fir Law Group content build v139
+
+Change from approved v138:
+- Replaced Joshua Cook's displayed portrait with the newly supplied photo.
+- No other website content, styling, or layout was changed.
