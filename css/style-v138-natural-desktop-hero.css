@@ -3975,3 +3975,5 @@ a.fir-group-link:focus{
   .mobile-social svg {width:16px;height:16px;fill:currentColor;}
   body.mobile-menu-open {overflow:hidden;}
 }
+
+.paralegal-company-link{color:inherit;text-decoration-color:var(--bronze);text-decoration-thickness:1px;text-underline-offset:3px}.paralegal-company-link:hover,.paralegal-company-link:focus-visible{color:var(--bronze)}
