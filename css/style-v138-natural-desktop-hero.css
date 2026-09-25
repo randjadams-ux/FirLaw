@@ -3977,3 +3977,5 @@ a.fir-group-link:focus{
 }
 
 .paralegal-company-link{color:inherit;text-decoration-color:var(--bronze);text-decoration-thickness:1px;text-underline-offset:3px}.paralegal-company-link:hover,.paralegal-company-link:focus-visible{color:var(--bronze)}
+
+.practice-exclusions{margin:30px 0 0;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.6;text-align:center}.practice-exclusions strong{color:var(--char);font-weight:600}
