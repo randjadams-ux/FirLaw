@@ -1,326 +1,378 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta name="site-build" content="2026-08-09-v123">
-  <!-- Fir Law Group build 2026-08-09-v123 -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fir Law Group | Practical Counsel in the Pacific Northwest</title>
-  <meta name="description" content="Fir Law Group is a boutique Oregon law firm providing practical counsel in civil litigation, land use and real estate, local government, business law, constitutional rights, and general civil matters.">
-  <link rel="stylesheet" href="css/style-v138-natural-desktop-hero.css?v=144">
-  <meta name="site-build-v124" content="rick-mobile-layout-fixed">
-  <meta name="site-build-v125" content="rick-mobile-refined">
-  <meta name="site-build-v126" content="rick-match-team-mobile">
-  <meta name="site-build-v127" content="rick-match-josh">
-  <meta name="site-build-v128" content="josh-rick-name-style-match-tony">
-
-  <link rel="icon" href="favicon.ico?v=129" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=129">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=129">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=129">
-<meta name="site-build-v130" content="tony-removed-phone-footer-restored"><meta name="site-build-v131" content="footer-phone-under-contact"><meta name="site-build-v132" content="rick-photo-match-josh"><meta name="site-build-v133" content="mobile-header-and-hero-refinement"><meta name="site-build-v134" content="mobile-sunset-hero-live-text"><meta name="site-build-v135" content="mobile-hero-precedence-and-rick-photo-match"><meta name="site-build-v136" content="forensics-style-desktop-header"><meta name="site-build-v137" content="footer-social-icons"></head>
+  <title>Fir Law Group | Focused Oregon Counsel</title>
+  <meta name="description" content="Focused Oregon counsel for local government, civil litigation, constitutional law and investigation-related matters.">
+  <style>
+    :root{
+      --fir:#10271f;
+      --fir-deep:#0a1d17;
+      --fir-soft:#17382d;
+      --cream:#f6f0e6;
+      --cream-light:#fbf8f2;
+      --bronze:#aa7137;
+      --bronze-light:#cda171;
+      --ink:#23251f;
+      --muted:#686157;
+      --line:#d9cebd;
+      --serif:Georgia,"Times New Roman",serif;
+      --sans:Arial,Helvetica,sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65}
+    a{color:inherit}
+    .company-link{color:inherit;text-decoration-color:rgba(170,113,55,.65);text-decoration-thickness:1px;text-underline-offset:3px}
+    .company-link:hover{color:var(--bronze-light)}
+    .preview-bar{background:#d5a562;color:#1d241d;text-align:center;padding:8px 18px;font:700 11px/1.2 var(--sans);letter-spacing:.13em;text-transform:uppercase}
+    .site-header{background:rgba(251,248,242,.98);border-bottom:1px solid rgba(16,39,31,.12)}
+    .header-inner{max-width:1380px;margin:auto;min-height:96px;padding:16px 40px;display:flex;align-items:center;gap:28px}
+    .brand{display:flex;align-items:center;gap:15px;text-decoration:none;min-width:230px}
+    .brand-logo{width:67px;height:56px;display:block;object-fit:contain}
+    .brand-name{font:600 23px/1 var(--serif);letter-spacing:.07em;color:var(--fir)}
+    .family{border-left:1px solid var(--line);padding-left:27px;display:inline-flex;align-items:baseline;gap:.55em;font-size:10px;line-height:1.45;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap;text-decoration:none}
+    .family strong{color:var(--fir);font-weight:700}
+    nav{margin-left:auto;display:flex;align-items:center;gap:25px}
+    nav a{text-decoration:none;text-transform:uppercase;letter-spacing:.09em;font-size:10px;font-weight:700;color:var(--fir)}
+    .consult-btn{background:var(--fir);color:#fff;padding:16px 20px;white-space:nowrap}
+    .hero{background:linear-gradient(118deg,rgba(10,29,23,.98),rgba(16,39,31,.91)),radial-gradient(circle at 78% 25%,#9d7045 0,transparent 32%);color:#fff;min-height:440px;display:flex;align-items:center}
+    .hero-inner{width:min(1180px,calc(100% - 80px));margin:auto;padding:86px 0 92px;display:grid;grid-template-columns:1.08fr .92fr;gap:90px;align-items:end}
+    .eyebrow{margin:0 0 18px;color:var(--bronze-light);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+    h1{font:400 clamp(48px,6vw,82px)/.98 var(--serif);letter-spacing:-.035em;margin:0;max-width:640px}
+    .hero-copy{border-left:1px solid rgba(205,161,113,.7);padding:10px 0 10px 32px;color:rgba(255,255,255,.82);font-size:16px;line-height:1.85;max-width:520px}
+    @media(min-width:951px){
+      .hero{min-height:0}
+      .hero-inner{padding:58px 0 64px;grid-template-columns:1.12fr .88fr;gap:64px;align-items:center}
+      .hero h1{font-size:clamp(48px,5.2vw,72px);max-width:590px}
+      .hero-copy{margin:0}
+    }
+    .scenic-band{max-width:1180px;height:225px;margin:30px auto 0;padding:0 40px;position:relative}
+    .scenic-panel{position:relative;height:100%;overflow:hidden;background:var(--fir)}
+    .scenic-panel img{width:100%;height:100%;display:block;object-fit:cover;filter:saturate(.88) contrast(.98)}
+    .scenic-panel:first-child img{object-position:center 54%}
+    .scenic-panel:first-child::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,29,23,.28),transparent 55%)}
+    .scenic-caption{position:absolute;left:25px;bottom:20px;z-index:1;margin:0;color:#fff;font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;text-shadow:0 1px 8px rgba(0,0,0,.45)}
+    .section{max-width:1180px;margin:auto;padding:100px 40px}
+    .section-rule{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:22px;margin-bottom:62px}
+    .section-rule span{height:1px;background:var(--line)}
+    .section-rule h2{margin:0;color:var(--fir);font-size:10px;letter-spacing:.22em;text-transform:uppercase}
+    .intro{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px;margin-bottom:65px;align-items:start}
+    .intro h2{font:400 clamp(34px,4vw,53px)/1.08 var(--serif);margin:0;color:var(--fir);letter-spacing:-.02em}
+    .intro p{margin:0;color:var(--muted);font-size:15px;line-height:1.9;max-width:650px}
+    .practice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+    .practice-card{position:relative;min-height:470px;padding:45px 45px 42px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;background:rgba(251,248,242,.42);transition:.25s ease}
+    .practice-card:hover{background:#fff;transform:translateY(-2px);box-shadow:0 18px 40px rgba(16,39,31,.07);z-index:2}
+    .num{font:600 11px/1 var(--sans);letter-spacing:.16em;color:var(--bronze);margin-bottom:40px}
+    .practice-card h3{font:400 38px/1.08 var(--serif);color:var(--fir);margin:0 0 20px;letter-spacing:-.025em}
+    .mini-rule{width:42px;height:1px;background:var(--bronze);margin-bottom:25px}
+    .practice-card p{margin:0 0 28px;color:var(--muted);font-size:13px;line-height:1.85}
+    .practice-card a{margin-top:auto;text-decoration:none;text-transform:uppercase;letter-spacing:.11em;font-size:10px;font-weight:700;color:var(--fir);display:inline-flex;gap:12px;align-items:center}
+    .practice-card a span{font-size:20px;color:var(--bronze);font-weight:400;transition:.2s ease}
+    .practice-card:hover a span{transform:translateX(4px)}
+    .attorneys{padding-top:58px;padding-bottom:110px}
+    .attorney-row{display:grid;grid-template-columns:minmax(290px,390px) 1fr;gap:82px;align-items:center;padding:0 0 92px;margin-bottom:92px;border-bottom:1px solid var(--line)}
+    .attorney-row:last-child{margin-bottom:0;padding-bottom:0;border-bottom:0}
+    .attorney-row-reverse{margin-bottom:0;padding-bottom:0;border-bottom:0}
+    .attorney-row-reverse .attorney-photo{order:2}
+    .attorney-row-reverse .attorney-copy{order:1}
+    .attorney-photo{width:100%;max-width:390px}
+    .attorney-row-reverse .attorney-photo{justify-self:end}
+    .attorney-photo img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover;filter:saturate(.88) contrast(.98)}
+    .attorney-copy h2{font:400 clamp(40px,4.6vw,60px)/1 var(--serif);letter-spacing:-.03em;color:var(--fir);margin:0 0 18px}
+    .attorney-copy>p:not(.eyebrow):not(.attorney-deck){color:var(--muted);font-size:13px;line-height:1.85;margin:0 0 16px;max-width:690px}
+    .attorney-deck{font:400 20px/1.5 var(--serif);color:var(--bronze);margin:0 0 25px}
+    .credentials{display:flex;flex-wrap:wrap;gap:8px;margin-top:27px}
+    .credentials span{border:1px solid var(--line);padding:8px 11px;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--fir);background:rgba(255,255,255,.35)}
+    .support-heading{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:22px;margin:95px 0 48px}
+    .support-heading span{height:1px;background:var(--line)}
+    .support-heading h3{margin:0;color:var(--fir);font-size:10px;letter-spacing:.2em;text-transform:uppercase}
+    .support-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+    .support-card{display:grid;grid-template-columns:180px 1fr;gap:30px;padding:32px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(251,248,242,.42);align-items:start}
+    .support-card img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.88) contrast(.98)}
+    .support-card .eyebrow{margin-bottom:11px}
+    .support-card h3{font:400 29px/1.06 var(--serif);letter-spacing:-.02em;color:var(--fir);margin:0 0 10px}
+    .support-role{font:400 14px/1.45 var(--serif);color:var(--bronze);margin:0 0 17px}
+    .support-card p:not(.eyebrow):not(.support-role){font-size:12px;line-height:1.75;color:var(--muted);margin:0 0 13px}
+    .support-card a{font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;text-decoration:none;color:var(--fir)}
+    .partnership{background:var(--fir);color:#fff}
+    .partnership-inner{max-width:1180px;margin:auto;padding:100px 40px;display:grid;grid-template-columns:.8fr 1.2fr;gap:85px}
+    .partnership h2{font:400 clamp(40px,4.4vw,62px)/1.03 var(--serif);letter-spacing:-.03em;margin:0}
+    .partner-copy{border-left:1px solid rgba(205,161,113,.65);padding-left:38px}
+    .partner-copy>p{margin:0 0 28px;color:rgba(255,255,255,.78);line-height:1.9;font-size:14px}
+    .roles{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:35px}
+    .role{border-top:1px solid rgba(255,255,255,.22);padding-top:18px}
+    .role strong{display:block;color:var(--bronze-light);font-family:var(--serif);font-size:20px;font-weight:400;margin-bottom:7px}
+    .role span{display:block;color:rgba(255,255,255,.68);font-size:12px;line-height:1.65}
+    .distinction{margin-top:28px!important;font-size:11px!important;color:rgba(255,255,255,.54)!important}
+    .why-fir{background:var(--cream-light);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .why-inner{max-width:1180px;margin:auto;padding:100px 40px;display:grid;grid-template-columns:.82fr 1.18fr;gap:90px;align-items:start}
+    .why-lead h2{font:400 clamp(41px,4.5vw,60px)/1.04 var(--serif);letter-spacing:-.03em;color:var(--fir);margin:0 0 24px}
+    .why-lead>p:last-child{color:var(--muted);font-size:14px;line-height:1.85;max-width:430px}
+    .why-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+    .why-grid article{padding:31px 30px 29px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:245px}
+    .why-grid span{font-size:10px;font-weight:700;letter-spacing:.13em;color:var(--bronze)}
+    .why-grid h3{font:400 25px/1.15 var(--serif);color:var(--fir);margin:22px 0 13px}
+    .why-grid p{margin:0;color:var(--muted);font-size:12px;line-height:1.75}
+    .results{background:var(--cream)}
+    .results-inner{max-width:1180px;margin:auto;padding:105px 40px;display:grid;grid-template-columns:.45fr 1.55fr;gap:90px}
+    .result-label>span{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.11em;border-top:1px solid var(--line);padding-top:19px;max-width:190px}
+    .result-copy h2{font:400 clamp(38px,4.5vw,59px)/1.07 var(--serif);letter-spacing:-.03em;color:var(--fir);margin:0 0 30px;max-width:800px}
+    .result-copy>p:not(.result-note){font-size:14px;line-height:1.9;color:var(--muted);max-width:800px}
+    .result-links{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0}
+    .result-links a{display:inline-block;text-decoration:none;border:1px solid rgba(16,39,31,.2);padding:12px 15px;color:var(--fir);font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:rgba(255,255,255,.35)}
+    .result-note{font-size:10px;color:#827a6d;margin-top:25px}
+    .consultation{background:var(--cream-light)}
+    .consultation-inner{max-width:1180px;margin:auto;padding:82px 40px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:60px}
+    .consultation h2{font:400 40px/1.1 var(--serif);color:var(--fir);margin:0 0 10px}
+    .consultation p{margin:0;color:var(--muted);font-size:13px}
+    .consultation-links{display:flex;align-items:center;gap:22px;margin-top:18px;flex-wrap:wrap}
+    .consultation-links a{color:var(--fir);font-size:10px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;text-underline-offset:4px}
+    .consultation .matter-note{margin:28px 0 0;color:#756d61;font-size:11px;letter-spacing:.015em;max-width:640px}
+    .cta{display:inline-block;text-decoration:none;background:var(--fir);color:#fff;padding:18px 25px;text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:700;white-space:nowrap}
+    footer{background:var(--fir-deep);color:rgba(255,255,255,.68)}
+    .footer-inner{max-width:1180px;margin:auto;padding:62px 40px 45px;display:grid;grid-template-columns:1.2fr .72fr .9fr;gap:72px;font-size:11px}
+    .footer-brand{font:400 21px/1 var(--serif);letter-spacing:.08em;color:#fff}
+    .footer-tagline{max-width:350px;margin:18px 0 0;line-height:1.8;color:rgba(255,255,255,.58)}
+    .footer-heading{margin:0 0 17px;color:var(--bronze-light);font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+    .footer-links{display:grid;gap:9px}
+    .footer-links a{color:rgba(255,255,255,.72);text-decoration:none}
+    .footer-links a:hover{color:#fff}
+    .footer-contact{font-style:normal;display:grid;gap:8px;line-height:1.65}
+    .footer-contact a{color:rgba(255,255,255,.76);text-decoration:none}
+    .footer-bottom{max-width:1180px;margin:auto;padding:22px 40px 28px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:30px;color:rgba(255,255,255,.42);font-size:9px;letter-spacing:.04em}
+    @media(max-width:950px){
+      .family,nav a:not(.consult-btn){display:none}.header-inner{min-height:78px;padding:11px 25px}.brand-logo{width:58px;height:48px}.hero-inner,.intro,.partnership-inner,.why-inner,.results-inner{grid-template-columns:1fr}.hero-inner{gap:45px;width:min(100% - 50px,1180px)}.hero-copy{max-width:680px}.scenic-band{height:205px;padding:0 25px;margin-top:28px}.partnership-inner,.why-inner,.results-inner{gap:40px}.practice-card{min-height:500px}.attorney-row{gap:48px}.support-card{grid-template-columns:145px 1fr;padding:24px;gap:22px}.why-grid{max-width:760px}.result-label>span{max-width:none}.footer-inner{grid-template-columns:1fr 1fr;gap:45px}.footer-brand-block{grid-column:1/-1}
+    }
+    @media(max-width:680px){
+      .preview-bar{font-size:9px}.header-inner{padding:10px 18px}.brand{min-width:0}.brand-name{font-size:18px}.brand-logo{width:52px;height:43px}.consult-btn{display:none}.hero{min-height:420px}.hero-inner{width:calc(100% - 38px);padding:66px 0}.hero-copy{padding-left:20px;font-size:14px}.scenic-band{height:175px;margin-top:20px;padding:0 20px}.section{padding:72px 20px}.attorneys{padding-top:50px}.section-rule{margin-bottom:45px}.intro{gap:25px;margin-bottom:45px}.attorney-row{grid-template-columns:1fr;gap:30px;padding-bottom:65px;margin-bottom:65px}.attorney-photo{max-width:285px}.attorney-row-reverse{padding-bottom:0;margin-bottom:0}.attorney-row-reverse .attorney-photo{order:1;justify-self:start}.attorney-row-reverse .attorney-copy{order:2}.support-heading{margin-top:70px}.support-grid{grid-template-columns:1fr}.support-card{grid-template-columns:110px 1fr;padding:22px 18px;gap:18px}.support-card h3{font-size:25px}.practice-grid{grid-template-columns:1fr}.practice-card{min-height:auto;padding:36px 28px}.practice-card h3{font-size:33px}.partnership-inner,.why-inner,.results-inner{padding:72px 20px}.partner-copy{padding-left:24px}.roles,.why-grid{grid-template-columns:1fr}.why-grid article{min-height:auto}.result-copy h2{font-size:38px}.consultation-inner{padding:65px 20px 45px;display:block}.consultation-links{display:block}.consultation-links a{display:inline-block;margin-top:15px}.consultation .matter-note{margin-top:25px}.cta{margin-top:28px}.footer-inner{padding:45px 20px 32px;display:grid;grid-template-columns:1fr;gap:34px}.footer-brand-block{grid-column:auto}.footer-bottom{padding:20px;display:block}.footer-bottom span{display:block;margin-top:6px}
+    }
+  </style>
+</head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
     <div class="header-inner">
-      <a class="v110-brand" href="#top" aria-label="Fir Law Group home">
-        <img src="images/fir-law-mark.png" alt="">
-        <span><strong>FIR</strong><small>LAW GROUP</small></span>
+      <a class="brand" href="#" aria-label="Fir Law Group home">
+        <img class="brand-logo" src="assets/fir-law-mark-original.png" alt="">
+        <span class="brand-name">FIR LAW GROUP</span>
       </a>
-
-      <div class="v110-family">
-        <a class="v110-family-title" href="https://firgroup.org/" target="_blank" rel="noopener">
-          <span>A Member of</span>
-          <strong>The Fir Group Family</strong>
-        </a>
-        <div class="v110-family-links">
-          <a href="https://firforensics.com/" target="_blank" rel="noopener">
-            <img src="images/fir-law-mark.png" alt=""><span>Fir Forensics</span>
-          </a>
-          <a href="https://firsolutions.org/" target="_blank" rel="noopener">
-            <img src="images/fir-law-mark.png" alt=""><span>Fir Solutions</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="v110-social" aria-label="Fir Law Group social media">
-        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v7h4v-7h3.5l.5-4h-4V9c0-.7.3-1 1-1Z"/></svg></a>
-        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.5 8.5H3V21h3.5V8.5ZM4.75 3A2.05 2.05 0 1 0 4.75 7.1 2.05 2.05 0 0 0 4.75 3ZM21 14.1c0-3.8-2-5.9-4.8-5.9-2.2 0-3.2 1.2-3.8 2v-1.7H9V21h3.5v-6.2c0-1.6.3-3.2 2.4-3.2 2 0 2.1 1.9 2.1 3.3V21H21v-6.9Z"/></svg></a>
-        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5ZM17.8 6.2a1.05 1.05 0 1 1-1.05 1.05A1.05 1.05 0 0 1 17.8 6.2Z"/></svg></a>
-        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.4-.4-5c-.2-1.2-1-2-2.2-2.2C18.5 4.3 12 4.3 12 4.3s-6.5 0-8.4.5C2.4 5 1.6 5.8 1.4 7 1 8.6 1 12 1 12s0 3.4.4 5c.2 1.2 1 2 2.2 2.2 1.9.5 8.4.5 8.4.5s6.5 0 8.4-.5c1.2-.2 2-1 2.2-2.2.4-1.6.4-5 .4-5ZM9.8 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg></a>
-      </div>
-
-      <nav class="v110-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
+      <a class="family" href="https://firgroup.org/" target="_blank" rel="noopener"><span>A member of</span><strong>The Fir Group Family</strong></a>
+      <nav aria-label="Preview navigation">
         <a href="#attorneys">Attorneys</a>
         <a href="#practice-areas">Practice Areas</a>
         <a href="#why-fir">Why Fir</a>
         <a href="#results">Results</a>
-        <a href="#contact">Contact</a>
+        <a href="https://firlawgroup.cliogrow.com/book" class="consult-btn">Schedule a Consultation</a>
       </nav>
-
-      <div class="v117-contact">
-        <a class="v110-cta" href="https://firlawgroup.cliogrow.com/book">Schedule a Consultation</a>
-      </div>
-
-      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav"><span>Menu</span></button>
-</div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden>
-      <div class="mobile-nav-inner">
-        <div class="mobile-nav-links">
-          <a href="#about">About</a>
-          <a href="#attorneys">Attorneys</a>
-          <a href="#practice-areas">Practice Areas</a>
-          <a href="#why-fir">Why Fir</a>
-          <a href="#results">Results</a>
-          <a href="#contact">Contact</a>
-        </div>
-
-        <a class="mobile-consultation" href="https://firlawgroup.cliogrow.com/book">Schedule a Consultation <span>→</span></a>
-
-        <div class="mobile-contact-row">
-          <a class="mobile-phone" href="tel:+15033831640">503-383-1640</a>
-          <a class="mobile-family" href="https://firgroup.org/" target="_blank" rel="noopener">A Member of The Fir Group Family</a>
-        </div>
-
-        <div class="mobile-social" aria-label="Fir Law Group social media">
-          <a href="#" aria-label="Facebook" title="Facebook">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v7h4v-7h3.5l.5-4h-4V9c0-.7.3-1 1-1Z"/></svg>
-          </a>
-          <a href="#" aria-label="LinkedIn" title="LinkedIn">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5H3V21h3.5V8.5ZM4.75 3A2.05 2.05 0 1 0 4.75 7.1 2.05 2.05 0 0 0 4.75 3ZM21 14.1c0-3.8-2-5.9-4.8-5.9-2.2 0-3.2 1.2-3.8 2v-1.7H9V21h3.5v-6.2c0-1.6.3-3.2 2.4-3.2 2 0 2.1 1.9 2.1 3.3V21H21v-6.9Z"/></svg>
-          </a>
-          <a href="#" aria-label="Instagram" title="Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5ZM17.8 6.2a1.05 1.05 0 1 1-1.05 1.05A1.05 1.05 0 0 1 17.8 6.2Z"/></svg>
-          </a>
-          <a href="#" aria-label="YouTube" title="YouTube">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 12s0-3.4-.4-5c-.2-1.2-1-2-2.2-2.2C18.5 4.3 12 4.3 12 4.3s-6.5 0-8.4.5C2.4 5 1.6 5.8 1.4 7 1 8.6 1 12 1 12s0 3.4.4 5c.2 1.2 1 2 2.2 2.2 1.9.5 8.4.5 8.4.5s6.5 0 8.4-.5c1.2-.2 2-1 2.2-2.2.4-1.6.4-5 .4-5ZM9.8 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg>
-          </a>
-        </div>
-      </div>
-    </nav>
+    </div>
   </header>
 
-  <main id="main">
-    <section id="top" class="hero-v69-locked" aria-label="Fir Law Group">
-  <div class="hero-desktop-v138">
-    <img src="images/hero-desktop-natural-v138.jpg" alt="Sunset over a forested Pacific Northwest valley">
-    <div class="hero-desktop-v138-copy">
-      <h1><span>Practical counsel.</span><span>Trusted guidance.</span><span>Real-world solutions.</span></h1>
-      <span class="hero-desktop-v138-rule" aria-hidden="true"></span>
-      <p>A boutique law firm serving individuals, businesses and local governments throughout the state of Oregon.</p>
-    </div>
-  </div>
-  <div class="hero-mobile-v134">
-    <img src="images/hero-mobile-sunset-v134.jpg" alt="Sunset over a forested Pacific Northwest valley">
-    <div class="hero-mobile-v134-copy">
-      <h1><span>Practical counsel.</span><span>Trusted guidance.</span><span>Real-world solutions.</span></h1>
-      <span class="hero-mobile-v134-rule" aria-hidden="true"></span>
-      <p>A boutique law firm serving individuals, businesses and local governments throughout the state of Oregon.</p>
-    </div>
-  </div>
-</section>
-
-    <section id="about" class="intro section-shell">
-      <p class="eyebrow">Rooted in the Pacific Northwest. Focused on you.</p>
-      <h2>Thoughtful legal guidance for the decisions, disputes, and plans that matter most.</h2>
-      <p class="intro-copy">Fir Law Group serves individuals, families, property owners, small businesses, and rural enterprises throughout the Pacific Northwest. We combine broad civil experience with practical judgment—helping clients protect what they have built, solve problems efficiently, and move forward with confidence.</p>
-      <div class="intro-proof" aria-label="How Fir Law Group works">
-        <span>Straight answers</span><span>Practical strategy</span><span>Direct attorney attention</span><span>Plain-English communication</span>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow">Focused Oregon counsel</p>
+          <h1>Experience where law, government and facts meet.</h1>
+        </div>
+        <p class="hero-copy">Fir Law Group represents local governments, individuals and organizations in complex matters involving public-sector operations, civil disputes, constitutional rights and administrative investigations.</p>
       </div>
     </section>
 
-    <section id="practice-areas" class="practice practice-expanded section-shell" aria-labelledby="practice-title">
-      <div class="section-rule"><span></span><h2 id="practice-title">Practice Areas</h2><span></span></div>
-      <div class="practice-intro">
-        <p class="eyebrow">A broad civil practice</p>
-        <h3>One firm for the legal issues that often overlap in real life.</h3>
-        <p>Legal problems rarely fit neatly into one box. Our practice brings litigation, transactional, land-use, municipal, business, and constitutional experience together so advice is shaped by the whole picture.</p>
+    <div class="scenic-band" aria-label="Oregon sunset landscape">
+      <div class="scenic-panel">
+        <img src="assets/oregon-sunset-panorama.jpg" alt="Sunset over a forested Oregon valley">
+        <p class="scenic-caption">Rooted in Oregon</p>
       </div>
-      <div class="practice-grid practice-grid-six">
-        <article><span class="num">01</span><h3>Civil Litigation</h3><div class="mini-rule"></div><p>Strategic representation in contract disputes, property conflicts, business disputes, and other civil cases.</p><a href="#consultation">Discuss a dispute <span>→</span></a></article>
-        <article><span class="num">02</span><h3>Land Use &amp;<br>Real Estate</h3><div class="mini-rule"></div><p>Guidance on zoning, permitting, partitions, boundary issues, property rights, and real-estate transactions.</p><a href="#consultation">Discuss a property matter <span>→</span></a></article>
-        <article><span class="num">03</span><h3>Local<br>Government</h3><div class="mini-rule"></div><p>Practical counsel for cities and other local governments on governance, contracts, land use, public records, code enforcement, employment, and municipal operations.</p><a href="#consultation">Complimentary consultation for local governments <span>→</span></a></article>
-        <article><span class="num">04</span><h3>Business Formation<br>&amp; Transactions</h3><div class="mini-rule"></div><p>LLCs, corporations, partnerships, contracts, sales, transactions, and day-to-day legal advice for growing businesses.</p><a href="#consultation">Talk business <span>→</span></a></article>
-        <article><span class="num">05</span><h3>Constitutional<br>Rights</h3><div class="mini-rule"></div><p>Civil-rights advocacy involving free speech, property rights, due process, and government action.</p><a href="#consultation">Discuss your rights <span>→</span></a></article>
-        <article><span class="num">06</span><h3>General Civil<br>Counsel</h3><div class="mini-rule"></div><p>Contract review and negotiation, small-business employment matters, debt collection, administrative appeals, and practical preventive counsel.</p><a href="#consultation">Ask about your matter <span>→</span></a></article>
+    </div>
+
+    <section id="attorneys" class="attorneys section">
+      <div class="section-rule"><span></span><h2>Attorneys</h2><span></span></div>
+      <div class="attorney-row">
+        <div class="attorney-photo"><img src="https://www.firlawgroup.com/images/ryan-v76.jpeg" alt="J. Ryan Adams"></div>
+        <div class="attorney-copy">
+          <p class="eyebrow">Founder · Managing Partner</p>
+          <h2>J. Ryan Adams</h2>
+          <p class="attorney-deck">Oregon roots. Hands-on experience. Practical judgment.</p>
+          <p>Ryan Adams is the founding partner of Fir Law Group and brings more than a decade of experience in litigation, municipal law, land use, constitutional matters and public-sector decision-making.</p>
+          <p>His public service includes serving as City Attorney for the City of Sherwood and Assistant City Attorney for the City of Wilsonville. He has advised on municipal operations and handled litigation, land use, contracts, code enforcement, administrative matters and constitutional questions.</p>
+          <p>Ryan is admitted before the Oregon Supreme Court, the U.S. District Court for the District of Oregon and the Ninth Circuit Court of Appeals.</p>
+          <div class="credentials"><span>Oregon Supreme Court</span><span>U.S. District Court</span><span>Ninth Circuit</span></div>
+        </div>
       </div>
-      <p class="practice-exclusions"><strong>Please note:</strong> Fir Law Group does not handle traffic citations or landlord-tenant matters.</p>
+      <div class="attorney-row attorney-row-reverse">
+        <div class="attorney-photo"><img src="https://www.firlawgroup.com/images/keegan-sanchez-outdoor-v144.jpg" alt="J. Keegan Sanchez"></div>
+        <div class="attorney-copy">
+          <p class="eyebrow">Attorney</p>
+          <h2>J. Keegan Sanchez</h2>
+          <p class="attorney-deck">Public service. Government experience. Oregon perspective.</p>
+          <p>Keegan brings a background in legislative policy, municipal law and military service to Fir Law Group. Before entering private practice, he worked in the Oregon State Legislature conducting policy analysis and served as a law clerk for the City of Sherwood.</p>
+          <p>At Fir Law Group, Keegan works with clients across civil, municipal, land-use, constitutional, administrative and advisory matters.</p>
+          <p>He earned degrees in Political Science and Economics from Eastern Oregon University and his Juris Doctor from Willamette University College of Law. He has served in the Oregon Army National Guard since 2016.</p>
+        </div>
+      </div>
+      <div class="support-heading"><span></span><h3>Business &amp; Legal Support</h3><span></span></div>
+      <div class="support-grid">
+        <article class="support-card">
+          <img src="https://www.firlawgroup.com/images/josh-v139.jpeg" alt="Joshua Cook">
+          <div>
+            <p class="eyebrow">Paralegal</p>
+            <h3>Joshua Cook</h3>
+            <p class="support-role">Cascade Legal Support</p>
+            <p>Joshua Cook provides dedicated paralegal support to Fir Law Group through his firm, Cascade Legal Support. Josh is known for reliable, detail-oriented work that helps the firm serve clients efficiently and well.</p>
+            <a href="https://www.cascadelegalsupport.com/" target="_blank" rel="noopener">Visit Cascade Legal Support ↗</a>
+          </div>
+        </article>
+        <article class="support-card">
+          <img src="https://www.firlawgroup.com/images/rick-adams-v82.jpeg" alt="Rick W Adams">
+          <div>
+            <p class="eyebrow">Business &amp; Operations</p>
+            <h3>Rick W Adams</h3>
+            <p class="support-role">Founder, Fir Solutions · Business &amp; Operations Advisor</p>
+            <p>Through Fir Solutions, Rick supports Fir Law Group’s systems, technology and operations. His work helps the firm’s legal professionals spend more time practicing law and serving clients.</p>
+            <a href="https://firsolutions.org/" target="_blank" rel="noopener">Learn more about Fir Solutions ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="practice-areas" class="section">
+      <div class="section-rule"><span></span><h2>Practice Areas</h2><span></span></div>
+      <div class="intro">
+        <h2>A focused practice for consequential matters.</h2>
+        <p>Drawing on substantial experience in municipal law, litigation and government decision-making, we provide practical counsel designed to withstand legal, administrative and public scrutiny.</p>
+      </div>
+
+      <div class="practice-grid">
+        <article class="practice-card">
+          <span class="num">01</span>
+          <h3>Local Government Law</h3>
+          <div class="mini-rule"></div>
+          <p>Practical counsel for cities, special districts and other public bodies on governance, public meetings and records, contracts, land use, code enforcement, personnel matters, administrative proceedings, constitutional questions and litigation.</p>
+          <a href="https://firlawgroup.cliogrow.com/book">Complimentary consultation for local governments <span>→</span></a>
+        </article>
+
+        <article class="practice-card">
+          <span class="num">02</span>
+          <h3>Civil Litigation</h3>
+          <div class="mini-rule"></div>
+          <p>Focused representation for individuals, organizations and public entities in contract, property, land-use, business-relationship, government-action and other significant civil disputes—from early evaluation through trial and appeal.</p>
+          <a href="https://firlawgroup.cliogrow.com/book">Discuss a civil matter <span>→</span></a>
+        </article>
+
+        <article class="practice-card">
+          <span class="num">03</span>
+          <h3>Constitutional Law</h3>
+          <div class="mini-rule"></div>
+          <p>Counsel and advocacy in matters involving due process, equal protection, free speech, property rights, governmental decision-making and claims arising from the actions of public officials or agencies.</p>
+          <a href="https://firlawgroup.cliogrow.com/book">Discuss a constitutional matter <span>→</span></a>
+        </article>
+
+        <article class="practice-card">
+          <span class="num">04</span>
+          <h3>Administrative Investigations &amp; Workplace Counsel</h3>
+          <div class="mini-rule"></div>
+          <p>Legal counsel for public agencies, governing bodies and organizations navigating administrative and workplace investigations—including scope, process, due process, confidentiality, disciplinary decisions, remedial action and potential litigation. When independent fact-finding is needed, clients may separately engage <a class="company-link" href="https://firforensics.com/">Fir Forensics</a>.</p>
+          <a href="#partnership">See how the firms work together <span>→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="partnership" class="partnership">
+      <div class="partnership-inner">
+        <div>
+          <p class="eyebrow">Complementary capabilities</p>
+          <h2>Clear facts.<br>Sound legal guidance.</h2>
+        </div>
+        <div class="partner-copy">
+          <p>When a matter requires independent fact-finding, clients may separately engage <a class="company-link" href="https://firforensics.com/">Fir Forensics</a>, Fir Law Group’s sister company. <a class="company-link" href="https://firforensics.com/">Fir Forensics</a> investigates workplace misconduct, executive and other sensitive matters, ethics and compliance concerns, and questions about the adequacy of prior investigative work.</p>
+          <p>Its investigations are independent, evidence-based and structured to produce clear, legally defensible findings.</p>
+          <div class="roles">
+            <div class="role"><strong><a class="company-link" href="https://firforensics.com/">Fir Forensics</a></strong><span>Develops the factual record through independent, disciplined investigation.</span></div>
+            <div class="role"><strong>Fir Law Group</strong><span>Advises on legal process, risk, implications and the appropriate response.</span></div>
+          </div>
+          <p class="distinction">The firms maintain distinct roles and separate engagements to preserve the independence and integrity of the investigative work.</p>
+        </div>
+      </div>
     </section>
 
     <section id="why-fir" class="why-fir">
-      <div class="topo" aria-hidden="true"></div>
-      <div class="why-inner section-shell">
+      <div class="why-inner">
         <div class="why-lead">
           <p class="eyebrow">Why Fir</p>
           <h2>Experienced counsel without the layers.</h2>
-          <p>Our work is built around direct relationships, practical strategy, and clear communication—not a one-size-fits-all legal process.</p>
+          <p>Our work is built around direct relationships, practical strategy and clear communication—not a one-size-fits-all legal process.</p>
         </div>
         <div class="why-grid">
-          <article><span>01</span><h3>Tailored strategy</h3><p>Advice shaped around your goals, budget, timing, and tolerance for risk—whether the best path is litigation, negotiation, mediation, or preventive planning.</p></article>
-          <article><span>02</span><h3>Senior-level attention</h3><p>Your matter receives direct attorney involvement rather than being passed through layers of staff and junior lawyers.</p></article>
-          <article><span>03</span><h3>Broad perspective</h3><p>Litigation, transactional, municipal, land-use, business, and advisory experience come together to solve problems holistically.</p></article>
-          <article><span>04</span><h3>Clear communication</h3><p>Complex issues explained in plain English, realistic expectations, straightforward billing, and responsive communication throughout the matter.</p></article>
+          <article><span>01</span><h3>Tailored strategy</h3><p>Advice shaped around your goals, budget, timing and tolerance for risk—whether the best path is litigation, negotiation, mediation or preventive counsel.</p></article>
+          <article><span>02</span><h3>Direct attorney attention</h3><p>Your matter receives direct attorney involvement rather than being passed through layers of staff and junior lawyers.</p></article>
+          <article><span>03</span><h3>Public-sector perspective</h3><p>Litigation, constitutional, municipal, land-use and investigative experience come together to address problems in their full legal and operational context.</p></article>
+          <article><span>04</span><h3>Clear communication</h3><p>Complex issues explained in plain English, with realistic expectations, straightforward billing and responsive communication throughout the matter.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="attorneys" class="attorney-feature section-shell" aria-labelledby="attorney-title">
-      <div class="attorney-feature-photo"><img src="images/ryan-v76.jpeg" alt="J. Ryan Adams"></div>
-      <div class="attorney-feature-copy">
-        <p class="eyebrow">Founder - Managing Partner</p>
-        <h2 id="attorney-title">J. Ryan Adams</h2>
-        <p class="attorney-deck">Oregon roots. Hands-on experience. Practical judgment.</p>
-
-        <p>Ryan Adams is the founding partner of Fir Law Group, bringing over a decade of diverse legal experience to deliver practical, results-driven advocacy for individuals, families, small businesses, and rural property owners throughout the Pacific Northwest.</p>
-        <p>Raised with a strong work ethic, Ryan put himself through college and law school by pouring concrete, framing houses, and serving in the military. His hands-on background informs his no-nonsense approach to solving real-world legal challenges.</p>
-        <p>Ryan’s career includes significant public service as City Attorney for the City of Sherwood, where he led the legal department, advised on municipal operations, and handled land use, contracts, litigation, and municipal prosecutions. Earlier, as Assistant City Attorney for the City of Wilsonville, he helped the City achieve notable appellate victories before the Land Use Board of Appeals (LUBA), Oregon Court of Appeals, and Oregon Supreme Court—including a landmark case against a state agency.</p>
-        <p>In private practice, Ryan has focused on representing farmers, small businesses, and property owners in civil litigation, landlord-tenant disputes, land use and real estate matters, business formation and transactions, estate planning, contract disputes, employment issues, and administrative appeals.</p>
-        <p>A dedicated member of the Oregon Army National Guard, Ryan currently serves as Deputy Regional Defense Counsel for the Western United States. He previously held the role of Command Judge Advocate for the 41st Infantry Brigade Combat Team, providing critical legal guidance during two overseas deployments, managing teams, and working with international partners.</p>
-        <p>Ryan is admitted to practice before the Oregon Supreme Court, the U.S. District Court for the District of Oregon, and the Ninth Circuit Court of Appeals. He formerly chaired the Oregon State Bar’s Military and Veterans Law Section and served as a Planning Commissioner for the City of Canby.</p>
-        <p>Deeply rooted in the Willamette Valley, Ryan and his wife Rainie live on their farm, where he spends his free time outdoors—working the land, repairing equipment, or hunting.</p>
-        <p>At Fir Law Group, Ryan is committed to providing clear, strategic, and client-focused representation that protects what you’ve built and helps you move forward with confidence.</p>
-<div class="credentials">
-          <span>Oregon Supreme Court</span><span>U.S. District Court — District of Oregon</span><span>Ninth Circuit Court of Appeals</span>
-        </div>
-      </div>
-    </section>
-<section class="second-attorney second-attorney-expanded keegan-profile section-shell" aria-labelledby="keegan-sanchez-title">
-      <div class="second-attorney-photo">
-        <img src="images/keegan-sanchez-outdoor-v144.jpg" alt="J. Keegan Sanchez, Attorney">
-      </div>
-      <div class="second-attorney-copy">
-        <p class="eyebrow">Attorney</p>
-        <h2 id="keegan-sanchez-title">J. Keegan Sanchez</h2>
-        <p>J. Keegan Sanchez brings a background in legislative policy, municipal law, and military service to Fir Law Group. Raised in Northeast Oregon, his career has been shaped by a longstanding commitment to public service and the communities of Oregon.</p>
-        <p>Keegan earned degrees in Political Science and Economics from Eastern Oregon University in 2021. While at EOU, he served as Student Body President, representing students and helping the university community navigate the challenges of the COVID-19 pandemic.</p>
-        <p>From 2021 through 2026, Keegan worked in the Oregon State Legislature, conducting policy analysis, researching complex issues, analyzing legislation, and navigating the legislative process. This experience gave him a broad understanding of Oregon government and the legal and policy considerations affecting communities throughout the state.</p>
-        <p>Keegan earned his Juris Doctor from Willamette University College of Law in 2026. During law school, he served as a law clerk for the City of Sherwood, where he gained practical experience in municipal government and public-sector law.</p>
-        <p>At Fir Law Group, Keegan works with clients across a broad range of civil, municipal, business, land-use, and advisory matters.</p>
-        <p>Keegan has also served in the Oregon Army National Guard since 2016. He enlisted as a combat medic before commissioning as a Medical Service Corps officer. During an overseas deployment with the 41st Infantry Brigade Combat Team, he supported medical operations and patient evacuation. He is now pursuing service in the Army Judge Advocate General’s Corps, continuing his commitment to public service through military legal practice.</p>
-        <p>Outside of work and military service, Keegan enjoys spending time with his fiancée and their two dogs, Apollo, a yellow Labrador, and Lucy, a golden retriever. He remains deeply connected to Oregon and is proud to serve the communities and institutions that have shaped his career.</p>
-      </div>
-    </section>
-<section class="paralegal-profile section-shell" aria-labelledby="joshua-cook-title">
-      <div class="paralegal-photo">
-        <img src="images/josh-v139.jpeg" alt="Joshua Cook, Paralegal">
-      </div>
-      <div class="paralegal-copy">
-        <p class="eyebrow">Paralegal</p>
-        <h2 id="joshua-cook-title">Joshua Cook</h2>
-        <p>Joshua Cook brings dedicated paralegal support to Fir Law Group through his firm, <a class="paralegal-company-link" href="https://www.cascadelegalsupport.com/" target="_blank" rel="noopener">Cascade Legal Support</a>. Based in Silverton, Josh has built a reputation for reliable, detail-oriented legal support that helps the firm serve clients efficiently and well.</p>
-        <p>Outside of work, Josh enjoys family life with his wife, Mary, and their family in the Silverton community they call home.</p>
-      </div>
-    </section>
-
-
-    <section class="solutions-profile-v82 section-shell" aria-labelledby="rick-adams-title">
-      <div class="solutions-profile-v82-photo">
-        <img src="images/rick-adams-v82.jpeg" alt="Rick W Adams, Founder of Fir Solutions">
-      </div>
-      <div class="solutions-profile-v82-copy">
-        <p class="eyebrow">Business &amp; Operations</p>
-        <h2 id="rick-adams-title">Rick W Adams</h2>
-        <p class="solutions-profile-v82-role">Founder, Fir Solutions <span>|</span> Business &amp; Operations Advisor</p>
-        <p>Through Fir Solutions, Rick provides business and operational support to Fir Law Group, helping the firm build the systems, technology, and processes needed to operate efficiently and serve clients well.</p>
-        <p>Drawing on more than two decades of experience in data, analytics, technology, risk, and organizational leadership, Rick works behind the scenes on firm strategy, technology, financial and operational planning, marketing, and business development. His focus is simple: allow the firm’s legal professionals to spend more of their time practicing law and serving clients, while ensuring the business supporting them runs effectively.</p>
-        <a class="solutions-profile-v82-link" href="https://firsolutions.org/" target="_blank" rel="noopener">Learn more about Fir Solutions <span>→</span></a>
-      </div>
-    </section>
-
-    <section class="who-we-serve section-shell" aria-labelledby="serve-title">
-      <div class="section-rule"><span></span><h2 id="serve-title">Who We Serve</h2><span></span></div>
-      <div class="serve-grid">
-        <article><h3>Property owners &amp; landlords</h3><p>For disputes, land-use questions, transactions, regulatory challenges, and property-rights issues.</p></article>
-        <article><h3>Small businesses</h3><p>For formation, contracts, general counsel, employment questions, transactions, and litigation support.</p></article>
-        <article><h3>Individuals &amp; families</h3><p>For civil disputes, constitutional rights, property matters, and other important personal legal matters.</p></article>
-        <article><h3>Rural &amp; community clients</h3><p>For practical counsel informed by Oregon communities, land, local government, and the realities of operating outside a large corporate environment.</p></article>
-      </div>
-    </section>
-
-    <section id="results" class="selected-matter wins-news">
-      <div class="selected-matter-inner section-shell">
+    <section id="results" class="results">
+      <div class="results-inner">
         <div class="result-label">
-          <p class="eyebrow">Wins &amp; In the News</p>
-          <span class="result-kicker">Civil rights · Federal court</span>
+          <p class="eyebrow">Representative Matters &amp; News</p>
+          <span>Civil rights · Federal court</span>
         </div>
         <div class="result-copy">
           <h2>Federal court orders Oregon to provide access to the voters’ pamphlet.</h2>
-          <p>Fir Law Group represented Mary Martin in civil-rights litigation against the State of Oregon. Ms. Martin had gathered a substantial number of signatures for a petition seeking to repeal a gas tax. After the tax was moved to the May 2026 ballot, she was unable to submit a voters’ pamphlet statement because of her financial status and disabilities.</p>
-          <p>Fir Law Group filed suit, and the federal court granted a restraining order and injunction against the Oregon Secretary of State. Ms. Martin’s argument was ultimately published in the voters’ pamphlet.</p>
-          <div class="result-links" aria-label="Mary Martin matter resources">
-            <a href="https://www.oregonlive.com/politics/2026/03/judge-rules-state-must-let-disabled-senior-submit-anti-gas-tax-argument-for-voters-pamphlet.html" target="_blank" rel="noopener">Oregonian coverage <span>↗</span></a>
-            <a href="https://www.firlawgroup.com/s/COMPLAINT_W_EX_Martin.pdf" target="_blank" rel="noopener">Read the complaint <span>↗</span></a>
-            <a href="https://www.firlawgroup.com/s/Opinion-and-Order.pdf" target="_blank" rel="noopener">Read the Opinion &amp; Order <span>↗</span></a>
+          <p>Fir Law Group represented Mary Martin in civil-rights litigation against the State of Oregon. After she was unable to submit a voters’ pamphlet statement because of her financial status and disabilities, Fir Law Group filed suit.</p>
+          <p>The federal court granted a restraining order and injunction against the Oregon Secretary of State. Ms. Martin’s argument was ultimately published in the voters’ pamphlet.</p>
+          <div class="result-links">
+            <a href="https://www.oregonlive.com/politics/2026/03/judge-rules-state-must-let-disabled-senior-submit-anti-gas-tax-argument-for-voters-pamphlet.html" target="_blank" rel="noopener">Oregonian coverage ↗</a>
+            <a href="https://static1.squarespace.com/static/6945e40070d7851b1d49a765/t/6a3be83a9d73f16e08c42b95/1782310970399/Opinion+and+Order.pdf" target="_blank" rel="noopener">Opinion &amp; Order ↗</a>
           </div>
           <p class="result-note">Past results do not guarantee future outcomes. Every matter depends on its facts and law.</p>
         </div>
       </div>
     </section>
 
-    <section id="approach" class="approach approach-v17">
-      <div class="topo" aria-hidden="true"></div>
-      <div class="approach-inner section-shell">
-        <div class="approach-lead">
-          <p class="eyebrow">Our Approach</p>
-          <h2>Plain English.<br>Practical solutions.<br>Personal attention.</h2>
-          <div class="gold-line"></div>
+    <section id="consultation" class="consultation">
+      <div class="consultation-inner">
+        <div>
+          <h2>Start with a focused conversation.</h2>
+          <p>Tell us briefly about the matter and we’ll help determine the appropriate next step.</p>
+          <div class="consultation-links"><a href="https://www.firlawgroup.com/book-appointment">Consultation Terms of Agreement</a></div>
+          <p class="matter-note"><strong>Please note:</strong> Fir Law Group does not handle traffic citations or landlord-tenant matters.</p>
         </div>
-        <div class="approach-steps">
-          <article><div class="approach-icon">◌</div><h3>We Listen</h3><p>We take the time to understand your goals, constraints, and what is really at stake.</p></article>
-          <article><div class="approach-icon">⌁</div><h3>We Advise</h3><p>We explain your options clearly, identify tradeoffs, and recommend a strategy that makes sense.</p></article>
-          <article><div class="approach-icon">◎</div><h3>We Deliver</h3><p>We stay responsive, follow through, and work toward the best practical outcome available.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="consultation" class="consultation-section section-shell">
-      <div class="consultation-lead">
-        <p class="eyebrow">Start with a focused conversation</p>
-        <h2>Let’s talk about what you’re facing.</h2>
-        <p>Schedule a consultation to explore your options and discuss whether Fir Law Group is the right fit for your matter. Flexible appointment times, including evenings, may be available.</p>
-      </div>
-      <div class="consultation-card">
-        <span class="consultation-meta">Initial Consultation</span>
-        <strong>50 minutes</strong>
-        <span class="consultation-price">$500</span>
-        <a href="https://firlawgroup.cliogrow.com/book" class="consultation-button">Schedule a Consultation <span>→</span></a>
-        <p>An initial consultation does not create an attorney-client relationship.<br><a class="consultation-terms-link" href="/book-appointment/">Consultation Terms of Agreement</a></p>
+        <a class="cta" href="https://firlawgroup.cliogrow.com/book">Schedule a Consultation →</a>
       </div>
     </section>
   </main>
 
-  <footer id="contact" class="site-footer">
-    <div class="footer-inner section-shell">
-      <div class="footer-brand">
-        <div class="footer-logo"><img src="images/fir-law-mark.png" alt=""><span><strong>FIR</strong><small>LAW GROUP</small></span></div>
-        <p>A boutique law firm<br>rooted in the Pacific Northwest</p>
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand-block">
+        <div class="footer-brand">FIR LAW GROUP</div>
+        <p class="footer-tagline">Focused Oregon counsel for local government, civil litigation, constitutional law and investigation-related matters.</p>
       </div>
-      <nav class="footer-nav" aria-label="Footer navigation">
-        <div><a href="#about">About</a><a href="#attorneys">Attorneys</a><a href="#practice-areas">Practice Areas</a></div>
-        <div><a href="#why-fir">Why Fir</a><a href="#results">Wins &amp; In the News</a><a href="#consultation">Consultation</a></div>
-      </nav>
-      <address class="footer-contact">
-        
-        <span>PO Box 35</span>
-        <span>Silverton, OR 97381</span>
-        <a href="mailto:Staff@FirLawGroup.com">Staff@FirLawGroup.com</a>
-            <a class="footer-phone-v131" href="tel:+15033831640">503-383-1640</a>
-        <div class="footer-social-v137">
-          <span>Connect with Fir Law Group</span>
-          <div class="footer-social-v137-icons" aria-label="Fir Law Group social media">
-            <a href="#" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v2H6v4h3v7h4v-7h3.5l.5-4h-4V9c0-.7.3-1 1-1Z"/></svg></a>
-            <a href="#" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5H3V21h3.5V8.5ZM4.75 3A2.05 2.05 0 1 0 4.75 7.1 2.05 2.05 0 0 0 4.75 3ZM21 14.1c0-3.8-2-5.9-4.8-5.9-2.2 0-3.2 1.2-3.8 2v-1.7H9V21h3.5v-6.2c0-1.6.3-3.2 2.4-3.2 2 0 2.1 1.9 2.1 3.3V21H21v-6.9Z"/></svg></a>
-            <a href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5ZM17.8 6.2a1.05 1.05 0 1 1-1.05 1.05A1.05 1.05 0 0 1 17.8 6.2Z"/></svg></a>
-            <a href="#" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 12s0-3.4-.4-5c-.2-1.2-1-2-2.2-2.2C18.5 4.3 12 4.3 12 4.3s-6.5 0-8.4.5C2.4 5 1.6 5.8 1.4 7 1 8.6 1 12 1 12s0 3.4.4 5c.2 1.2 1 2 2.2 2.2 1.9.5 8.4.5 8.4.5s6.5 0 8.4-.5c1.2-.2 2-1 2.2-2.2.4-1.6.4-5 .4-5ZM9.8 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg></a>
-          </div>
+      <div>
+        <p class="footer-heading">Explore</p>
+        <div class="footer-links">
+          <a href="#attorneys">Attorneys</a>
+          <a href="#practice-areas">Practice Areas</a>
+          <a href="#why-fir">Why Fir</a>
+          <a href="#results">Representative Matters</a>
+          <a href="https://www.firlawgroup.com/book-appointment">Consultation Terms</a>
         </div>
-      </address>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <address class="footer-contact">
+          <span>PO Box 35<br>Silverton, OR 97381</span>
+          <a href="mailto:Staff@FirLawGroup.com">Staff@FirLawGroup.com</a>
+          <a href="tel:+15033831640">503-383-1640</a>
+        </address>
+      </div>
     </div>
-    <div class="footer-bottom section-shell"><span>© 2026 Fir Law Group. All rights reserved.</span><span><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></span></div>
-</footer>
-
-  <script src="js/site-v124-rick-mobile.js?v=140"></script>
+    <div class="footer-bottom">
+      <span>© 2026 Fir Law Group. All rights reserved.</span>
+      <span>General information only · No attorney-client relationship is created by this website.</span>
+    </div>
+  </footer>
 </body>
 </html>
